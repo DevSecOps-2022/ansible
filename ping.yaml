@@ -1,6 +1,0 @@
-- name: ping ansible node server
-  hosts: webserver
-  tasks:
-    - name: ping ansible node server
-      ping:
-      

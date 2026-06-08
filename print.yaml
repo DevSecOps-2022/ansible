@@ -1,6 +1,0 @@
-- name: printing a meaasge
-  hosts: webserver
-  tasks:
-  - name: print a message
-    debug:
-      msg: "disable yaml extension"
