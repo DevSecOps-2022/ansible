@@ -1,0 +1,9 @@
+- name: demo on vars
+  hosts: local
+  connection: local
+  vars:
+   course: "ansible"
+   trainer: "siva"
+  tasks:
+  - debug:
+      msg: "welcome to {{ course }} training by {{ trainer }}"
