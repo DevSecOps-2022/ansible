@@ -1,5 +1,5 @@
 - name: printing a meaasge
-  host: webserver
+  hosts: webserver
   tasks:
   - name: print a message
     debug:
