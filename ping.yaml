@@ -1,0 +1,5 @@
+- name: Sample file for ping test
+  hosts: frontend
+  tasks: 
+    - name: ping the frontend server
+      ping:
