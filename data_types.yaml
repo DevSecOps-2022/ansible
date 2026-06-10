@@ -15,7 +15,10 @@
   tasks:
     - name: Display course information & Data types
       debug:
-        msg: "name: {{ course | type_debug }}"
+        msg: 
+        - "name: {{course}}"
+        - "type: {{ course | type_debug }}"
+
           # duration: {{ duration_in_hours }} hours
           # is_it_live: {{ is_live_sessions }}
           # topics: {{ topics }}
