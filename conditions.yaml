@@ -1,0 +1,10 @@
+- name: conditions in Ansible
+  hosts: local
+  connection: local
+  vars:
+    live_session: 4
+  tasks:
+    - name: Check if live session is greater than 3
+      debug:
+        msg: "Live session is greater than 3"
+      when: live_session > 3
