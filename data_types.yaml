@@ -13,12 +13,11 @@
       months: "5"
       trainer: "Siva"
   tasks:
-    - name: Display course information
+    - name: Display course information & Data types
       debug:
-        msg: |
-          name: {{ course }}
-          duration: {{ duration_in_hours }} hours
-          is_it_live: {{ is_live_sessions }}
-          topics: {{ topics }}
-          more_details: {{ more_details }}
+        msg: "name: {{ course | type_debug }}"
+          # duration: {{ duration_in_hours }} hours
+          # is_it_live: {{ is_live_sessions }}
+          # topics: {{ topics }}
+          # more_details: {{ more_details }}
           
