@@ -1,0 +1,15 @@
+- name: sample loop demo
+  hosts: local
+  connection: local
+  tasks:
+    - name: Print names
+      debug:
+        msg: "{{ item}}"
+      loop:
+        - Chinni
+        - Bobby
+        - bubu
+    - name: print numbers
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ range(1, 11) | list }}"
