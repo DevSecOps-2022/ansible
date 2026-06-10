@@ -1,10 +1,10 @@
 - name: Task level variables
   hosts: localhost
   connection: local
-  # vars:
-  #   COURSE: Ansible-Play
-  #   TRAINER: Siva-play
-  #   DURATION: 15 Hours-play
+  vars:
+    COURSE: Ansible-Play
+    TRAINER: Siva-play
+    DURATION: 15 Hours-play
   tasks:
     - name: printing the task level variables
       vars: 
