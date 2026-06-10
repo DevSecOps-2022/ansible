@@ -6,7 +6,7 @@
       package:
         name: nginx
         state: present
-    - name: start ngnx on frontend server
+    - name: start nginx on frontend server
       service:
         name: nginx
         state: started

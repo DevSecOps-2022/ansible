@@ -1,0 +1,6 @@
+- name: sample file for printing 
+  hosts: frontend
+  tasks: 
+    - name: print the text
+      debug:
+        msg: "This is a sample file for printing the text, Hi Ansible"
