@@ -1,0 +1,6 @@
+- name: Check and print the OS information of the target host
+  hosts: frontend
+  tasks:
+    - name: Print the OS information
+      debug:
+        msg: "The OS information of the target host is {{ansible_facts['os_family']}}"
