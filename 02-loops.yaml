@@ -1,0 +1,21 @@
+- name: Installing packages using loops
+  hosts: frontend
+  tasks: 
+    - name: Installing packages using loops
+      package:
+        name: "{{ item}}"
+        state: present
+      loop:
+        - nginx
+        - git
+        - mysql
+        - maven
+        
+    - name: printing the installed packages
+      debug:
+        msg: "{{ item }}"
+      loop:
+        - nginx
+        - git
+        - mysql
+        - maven
