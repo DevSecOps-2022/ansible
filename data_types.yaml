@@ -25,8 +25,22 @@
         - "duration: {{duration_in_hours}}"
         - "type: {{ duration_in_hours | type_debug }}"
 
-          # duration: {{ duration_in_hours }} hours
-          # is_it_live: {{ is_live_sessions }}
-          # topics: {{ topics }}
-          # more_details: {{ more_details }}
+    - name: Display course information & Data types
+      debug:
+        msg:
+        - "is_it_live: {{ is_live_sessions }}"
+        - "type: {{ is_live_sessions | type_debug }}"
+    
+    - name: Display course information & Data types
+      debug:
+        msg:
+        - "topics: {{ topics }}"
+        - "type: {{ topics | type_debug }}"
+    
+    - name: Display course information & Data types
+      debug:
+        msg:
+        - "more_details: {{ more_details }}"
+        - "type: {{more_details | type_debug }}"
+
           
