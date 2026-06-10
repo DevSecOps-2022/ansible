@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    live_session: 4
+    live_session: 2
   tasks:
     - name: Check if live session is greater than 3
       debug:
