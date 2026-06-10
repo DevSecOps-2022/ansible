@@ -4,6 +4,7 @@
   vars_prompt:
     - name: number
       prompt: "Please enter a number"
+      private: no
   tasks:
     - name: Check if the number is odd or even
       debug:
