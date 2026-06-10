@@ -1,5 +1,5 @@
 - name: Sample file for variables
-  hosts: local
+  hosts: localhost
   connection: local
   vars:
     COURSE: Ansible
@@ -9,4 +9,3 @@
     - name: Print the variables
       debug:
         msg: "Hi, I am Learning {{ COURSE}}, Traisner is {{TRAINER}} and Durations is {{DURATION}}"
-        
