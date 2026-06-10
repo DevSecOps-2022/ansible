@@ -1,0 +1,12 @@
+- name: Sample file for variables
+  hosts: local
+  connection: local
+  vars:
+    COURSE: Ansible
+    TRAINER: Siva
+    DURATION: 15 Hours
+  tasks:
+    - name: Print the variables
+      debug:
+        msg: "Hi, I am Learning {{ COURSE}}, Traisner is {{TRAINER}} and Durations is {{DURATION}}"
+        
