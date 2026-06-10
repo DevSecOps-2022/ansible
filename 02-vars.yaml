@@ -8,10 +8,12 @@
   #   TRAINER: Siva-play
   #   DURATION: 15 Hours-play
   vars_prompt:
-  - name: Defining the variables 
-    COURSE: "Please enter the course name"
-    TRAINER: "Please enter the trainer name"
-    DURATION: "Please enter the duration of the course"
+  - name: COURSE
+    prompt: "Please enter the course name"
+  - name: TRAINER
+    prompt: "Please enter the trainer name"
+  - name: DURATION
+    prompt: "Please enter the duration of the course"
     private: yes
   tasks:
     - name: printing the task level variables
