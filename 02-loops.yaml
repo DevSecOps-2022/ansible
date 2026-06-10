@@ -1,5 +1,6 @@
 - name: Installing packages using loops
   hosts: frontend
+  become: true
   tasks: 
     - name: Installing packages using loops
       package:
@@ -10,7 +11,7 @@
         - git
         - mysql
         - maven
-        
+
     - name: printing the installed packages
       debug:
         msg: "{{ item }}"
