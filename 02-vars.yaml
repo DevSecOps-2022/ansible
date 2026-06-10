@@ -1,15 +1,17 @@
 - name: Task level variables
   hosts: localhost
   connection: local
-  vars:
-    COURSE: Ansible-Play
-    TRAINER: Siva-play
-    DURATION: 15 Hours-play
+  var_files:
+    - course.yaml
+  # vars:
+  #   COURSE: Ansible-Play
+  #   TRAINER: Siva-play
+  #   DURATION: 15 Hours-play
   tasks:
     - name: printing the task level variables
-      vars: 
-        COURSE: Ansible
-        TRAINER: Siva
-        DURATION: 15 Hours
+      # vars: 
+      #   COURSE: Ansible
+      #   TRAINER: Siva
+      #   DURATION: 15 Hours
       debug:
-        msg: "Hi myself & bubu learning {{ COURSE}}, Trainer is {{TRAINER}} and Durations is {{DURATION}}"
+        msg: "Hi Dudu & Bubu learning {{ COURSE}}, Trainer is {{TRAINER}} and Durations is {{DURATION}}"
