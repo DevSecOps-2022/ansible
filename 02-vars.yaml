@@ -19,7 +19,7 @@
     - name: printing the task level variables
       vars: 
         COURSE: Ansible
-        TRAINER: Siva
-        DURATION: 15 Hours
+        # TRAINER: Siva
+        # DURATION: 15 Hours
       debug:
         msg: "Hi Dudu & Bubu learning {{ COURSE}}, Trainer is {{TRAINER}} and Durations is {{DURATION}}"
