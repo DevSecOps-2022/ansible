@@ -1,0 +1,13 @@
+- name: Install & Start nginx on frontend server
+  hosts: frontend
+  become: yes
+  tasks:
+    - name: Install nginx on frontend server
+      package:
+        name: nginx
+        state: present
+    - name: start ngnx on frontend server
+      service:
+        name: nginx
+        state: started
+        enabled: yes
