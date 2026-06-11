@@ -1,0 +1,13 @@
+- name: sample playbook for error handling
+  hosts: local
+  connectionl: local
+  become: true
+  tasks:
+    - name: check roboshop user exists
+      command: id roboshop
+      register: user_check
+      # ignore_errors: true
+    
+    - name: print user_check output
+      debug:
+        msg: "{{user_check}}"
