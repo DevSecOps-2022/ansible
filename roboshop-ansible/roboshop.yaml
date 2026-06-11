@@ -12,7 +12,7 @@
       amazon.aws.ec2_instance:
         name: "roboshop-{{ item }}"
         instance_type: "{{ instance_type }}"
-        image-id: "{{ image_id }}"
+        image_id: "{{ image_id }}"
         region: us-east-1
         security_groups: 
           - "roboshop-{{ item }}"
