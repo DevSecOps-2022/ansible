@@ -16,5 +16,7 @@
     - name: check sheell ouput
       command: cat /tmp/file.txt
       register: shell_output
+
+    - name: print shell output  
       debug:
         msg: "{{ shell_output}}"
