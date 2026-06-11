@@ -15,7 +15,7 @@
       msg:
       -  "Before Conversion:{{topics | type_debug}}"
       -  "{{topics | split(',')}}"
-      - "After Conversion: {{topics | spilt(',') | type_debug}}"
+      - "After Conversion: {{topics | split(',') | type_debug}}"
   
   - name: set default values
     debug:
