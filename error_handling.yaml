@@ -1,6 +1,6 @@
 - name: sample playbook for error handling
   hosts: local
-  connectionl: local
+  connection: local
   become: true
   tasks:
     - name: check roboshop user exists
