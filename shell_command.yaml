@@ -1,0 +1,19 @@
+- name: demo on Shell vs Command
+  hosts: local
+  connection: local
+  tasks:
+    - name: command test
+      command: id ec2-user
+      register: command_output
+
+    - name: print command output
+      debug: 
+        msg: "{{command_output}}"
+    
+    - name: shell test
+      shell: ls -ltr > /tmp/file.txt
+      register: shell_output
+    
+    - name: print shell output
+      debug:
+        msg: "{{ shell_output}}"
