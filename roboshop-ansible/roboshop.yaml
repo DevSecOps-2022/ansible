@@ -27,7 +27,7 @@
     - name: print the private ip address of the instances
       debug:
         msg: 
-        - "Instance name:{{ item.instances[0].tags.name }}"
+        - "Instance name:{{ item.instances[0].tags.Name }}"
         - "Instance_name:{{ item.item }}"
         - "Private IP address: {{ item.instances[0].private_ip_address }}"
       loop: "{{ ec2_instance.results }}"
