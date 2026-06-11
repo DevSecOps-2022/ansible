@@ -31,9 +31,9 @@
         - "Instance name:{{ item.instances[0].tags.Name }}"
         - "Instance_name:{{ item.item }}"
         - "Private IP address: {{ item.instances[0].private_ip_address }}"
+        ignore_error: true
       loop: "{{ ec2_instance.results }}"
-      ignore_error: true
-  
+         
     - name: creating route53 records for instances
       amazon.aws.route53:
         state: present
