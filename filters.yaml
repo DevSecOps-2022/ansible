@@ -15,6 +15,7 @@
       msg:
       -  "Before Conversion:{{topics | type_debug}}"
       -  "{{topics | split(',')}}"
+      - "After Conversion: {{topics | spilt(',') | type_debug}}"
   
   - name: set default values
     debug:
@@ -25,3 +26,4 @@
       msg:
       - "Before conversion: {{ tagname | type_debug }}"
       - "{{ tagname | dict2items}}"
+      - "After conversion: {{ tagname | dict2items | type_debug}}"
