@@ -8,7 +8,23 @@
       Project: Roboshop
       Environment: Dev
     full_name: "Hanumanth Reddy N"
-  
+    ip_address: 1765.98.67.98
+    tag_list:
+      [
+            {
+                "key": "name",
+                "value": "DevSecOps with AIOps"
+            },
+            {
+                "key": "Project",
+                "value": "Roboshop"
+            },
+            {
+                "key": "Environment",
+                "value": "Dev"
+            }
+        ]
+                      
   tasks:
   - name: convert string to list
     debug:
@@ -27,3 +43,22 @@
       - "Before conversion: {{ tagname | type_debug }}"
       - "{{ tagname | dict2items}}"
       - "After conversion: {{ tagname | dict2items | type_debug}}"
+
+  - name: convert list to map
+    debug:
+      msg:
+      - "Before conversion: {{ tag_list | type_debug}}"
+      - "{{ tag_list | items2dict}}"
+      - "After conversion: {{ tag_list | item2dict | type_debug}}"
+  
+  - name: conver to upper case
+    debug:
+      msg: "{{ full_name | upper}}"
+  
+  - name: convert to lower case
+    debug: 
+      msg: "{{ full_name | lower}}"
+
+  - name: check ipv4 address
+    debug:
+      msg: "{{ ip_address | ansible.utils.ipv4}}"
