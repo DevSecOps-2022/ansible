@@ -49,7 +49,7 @@
       msg:
       - "Before conversion: {{ tag_list | type_debug}}"
       - "{{ tag_list | items2dict}}"
-      - "After conversion: {{ tag_list | item2dict | type_debug}}"
+      - "After conversion: {{ tag_list | items2dict | type_debug}}"
   
   - name: conver to upper case
     debug:
