@@ -12,7 +12,12 @@
       debug:
         msg: "{{user_check}}"
 
+    # - name: create roboshop user
+    #   command: useradd roboshop
+    #   when: user_check.rc != 0
+
+# creating user using user module instead of command module
     - name: create roboshop user
-      command: useradd roboshop
+      user:
+        name: roboshop
       when: user_check.rc != 0
-      
