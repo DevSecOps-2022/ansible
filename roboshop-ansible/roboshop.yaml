@@ -7,7 +7,7 @@
     image_id: ami-0220d79f3f480ecf5
     domain_name: chinnimaha.online
     action: create
-    
+
   tasks:
     - name: create ec2 instance
       amazon.aws.ec2_instance:
@@ -78,7 +78,7 @@
         ttl: 1
       loop: "{{ instances }}"
       when:
-        - item.item == "frontend"
+        - item == "frontend"
         - action == "delete"
     
     - name: terminate ec2_instances
