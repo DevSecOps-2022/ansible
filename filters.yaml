@@ -12,8 +12,9 @@
   tasks:
   - name: convert string to list
     debug:
-      - msg: " Before Conversion:{{topics | type_debug}}"
-      - msg: "{{topics | split(',')}}"
+      msg:
+      -  "Before Conversion:{{topics | type_debug}}"
+      -  "{{topics | split(',')}}"
   
   - name: set default values
     debug:
@@ -21,5 +22,6 @@
     
   - name: convert map to list
     debug:
-      - msg: "Before conversion: {{ tagname | type_debug }}"
-      - msg: "{{ tagname | dict2items}}"
+      msg:
+      - "Before conversion: {{ tagname | type_debug }}"
+      - "{{ tagname | dict2items}}"
