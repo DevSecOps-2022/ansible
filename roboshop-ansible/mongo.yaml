@@ -16,4 +16,4 @@
     service:
       name: mongodb
       state: started
-      enable: yes
+      enabled: yes
