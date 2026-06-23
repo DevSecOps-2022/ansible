@@ -50,7 +50,7 @@
      dest: /etc/systemd/system/catalogue.service
   - name: copy mongo repo
     copy:
-     src: mango.repo
+     src: mongo.repo
      dest: /etc/yum.repos.d/mongo.repo
   - name: installing mongo db
     package: 
