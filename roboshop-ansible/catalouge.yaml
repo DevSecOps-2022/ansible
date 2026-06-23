@@ -37,7 +37,7 @@
     unarchive:
      src: /tmp/catalouge.zip
      dest: /app
-    remote_src: true
+    remote_src: yes
   - name: changing the directory
     command: cd /app
   - name: installing the npm
