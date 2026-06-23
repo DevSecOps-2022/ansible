@@ -64,6 +64,6 @@
      daemon_reload: true
   - name: start & enable catalouge
     service:
-     name: catalouge
+     name: catalogue
      state: restarted
      enabled: yes
