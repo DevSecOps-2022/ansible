@@ -38,10 +38,10 @@
      src: /tmp/catalouge.zip
      dest: /app
      remote_src: yes
-  - name: changing the directory
-    command: cd /app
+  # - name: changing the directory
+  #   command: cd /app
   - name: installing the npm
-    command: npm install 
+    command: cd /app && npm install 
   - name: copy catalouge service
     template:
      src: catalouge.service.j2
