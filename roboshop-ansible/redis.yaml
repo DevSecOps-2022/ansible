@@ -19,19 +19,14 @@
       regexp: '127.0.0.1'
       replace: '0.0.0.0'
   
-  - name: allow traffic to all
+  - name: replace the text
     replace:
       path: /etc/redis/redis.conf 
       regexp: 'protected-mode'
-      replace: 'protected-mode no'
+      line: 'protected-mode no'
   
   - name: starting and enable redis
     service:
       name: redis
       state: started
       enabled: yes
-
-  - name: restarting redis
-    service:
-      name: redis
-      state: restart
