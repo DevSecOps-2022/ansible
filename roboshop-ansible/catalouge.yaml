@@ -35,8 +35,8 @@
      dest: /tmp/catalouge.zip
   - name: extracting the file
     unarchive:
-    src: /tmp/catalouge.zip
-    dest: /app
+     src: /tmp/catalouge.zip
+     dest: /app
     remote_src: true
   - name: changing the directory
     command: cd /app
