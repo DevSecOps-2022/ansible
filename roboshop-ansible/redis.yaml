@@ -10,7 +10,7 @@
 
   - name: installing redis
     package: 
-     name: redis:7
+     name: redis
      state: present
   
   - name: allow traffic to all
