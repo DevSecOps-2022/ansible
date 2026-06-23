@@ -57,7 +57,7 @@
      name: mongodb-mongosh
      state: present
   - name: load the data into database
-    shell: mongosh --host MONGODB_HOST </app/db/master-data.js
+    shell: mongosh --host {{ MONGODB_HOST }} </app/db/master-data.js
   - name: daemon reload
     systemd_service:
      name: catalouge
