@@ -22,8 +22,8 @@
   - name: replace the text
     replace:
       path: /etc/redis/redis.conf 
-      regexp: 'protected-mode'
-      line: 'protected-mode no'
+      regexp: 'protected-mode yes'
+      replace: 'protected-mode no'
   
   - name: starting and enable redis
     service:
