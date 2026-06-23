@@ -34,4 +34,4 @@
   - name: restarting redis
     service:
       name: redis
-      state: restarted
+      state: restart
