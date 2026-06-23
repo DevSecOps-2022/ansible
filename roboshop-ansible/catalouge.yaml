@@ -41,7 +41,9 @@
   # - name: changing the directory
   #   command: cd /app
   - name: installing the npm
-    command: cd /app && npm install 
+    command: npm install
+    args: 
+     chdir: /app 
   - name: copy catalouge service
     template:
      src: catalouge.service.j2
