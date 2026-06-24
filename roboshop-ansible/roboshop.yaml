@@ -17,9 +17,14 @@
         region: us-east-1
         security_groups: 
           - "roboshop-{{ item }}"
+          - "roboshop-common"
+        tags:
+          name: ec2
       loop: "{{ instances }}"
       register: ec2_instance
       when: action == "create"
+      
+
 
     - name: print ec2 instance details
       debug:
