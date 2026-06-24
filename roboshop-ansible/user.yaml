@@ -28,7 +28,7 @@
   - name: creating directory
     file:
       path: /app
-      state: present
+      state: directory
   - name: downloading file
     get_url:
      url: https://roboshop-artifacts.s3.amazonaws.com/user-v3.zip
