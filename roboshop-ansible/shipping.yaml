@@ -5,7 +5,7 @@
   - name: installing maven
     package:
       name: "{{ item }}"
-      sate: present
+      state: present
     loop:
     - maven
     - mysql
