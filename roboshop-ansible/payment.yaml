@@ -43,7 +43,7 @@
     args:
       chdir: /app
   - name: copying service file
-    copy:
+    template:
       src: payment.service.j2
       dest: /etc/systemd/system/payment.service
   - name: daemon reload
