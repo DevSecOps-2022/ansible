@@ -48,10 +48,10 @@
       dest: /etc/systemd/system/cart.service
   - name: daemon reload
     systemd_service:
-     name: user
+     name: cart
      daemon_reload: true
   - name: start & enable user
     service:
-     name: user
+     name: cart
      state: restarted
      enabled: yes
