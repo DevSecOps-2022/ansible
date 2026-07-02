@@ -5,3 +5,5 @@ REDIS_HOST: redis.chinnimaha.online
 CATALOGUE_HOST: catalouge.chinnimaha.online
 CART_HOST: cart.chinnimaha.online
 MYSQL_HOST: mysql.chinnimaha.online
+USER_HOST: user.chinnimaha.online
+RABBITMQ_HOST: rabbitmq.chinnimaha.online

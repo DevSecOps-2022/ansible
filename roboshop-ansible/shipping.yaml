@@ -22,7 +22,7 @@
       state: absent
   - name: deleting temp directory
     file:
-      path: /tmp/user.zip
+      path: /tmp/shipping.zip
       state: absent
   - name: creating directory
     file:
