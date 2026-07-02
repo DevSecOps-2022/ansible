@@ -1,5 +1,5 @@
 - name: configuring user server
-  hosts: user
+  hosts: cart
   become: yes
   tasks:
   - name: disable default nodejs
@@ -13,7 +13,7 @@
   - name: creating roboshop system user
     user:
      name: roboshop
-     comment: roboshop systemuser 
+     comment: "roboshop systemuser" 
      system: true
      home: /app
      shell: /sbin/nologin
