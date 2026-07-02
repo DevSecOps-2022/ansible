@@ -28,7 +28,7 @@
       dest: /usr/share/nginx/html
       remote_src: yes
   - name: copying nginx config file
-    copy:
+    template:
       src: frontend.j2
       dest: /etc/nginx/nginx.conf
   - name: daemon reload
